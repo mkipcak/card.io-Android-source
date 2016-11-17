@@ -11,7 +11,7 @@ import java.text.StringCharacterIterator;
 import java.util.Calendar;
 import java.util.Date;
 
-class CreditCardNumber {
+public class CreditCardNumber {
 
     /**
      * Checks if the given string represents a number that passes the Luhn Checksum which all valid

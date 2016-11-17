@@ -9,7 +9,7 @@ import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.TextUtils;
 
-class CardNumberValidator implements Validator {
+public class CardNumberValidator implements Validator {
     // private static final String TAG = CardNumberValidator.class.getSimpleName();
 
     private String numberString;
