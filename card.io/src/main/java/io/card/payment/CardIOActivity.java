@@ -26,7 +26,6 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.OrientationEventListener;
-import android.view.Surface;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
@@ -56,7 +55,7 @@ import io.card.payment.ui.ViewUtil;
  *
  * @version 1.0
  */
-public final class CardIOActivity extends Activity {
+public class CardIOActivity extends Activity {
     /**
      * Boolean extra. Optional. Defaults to <code>false</code>. If set, the card will not be scanned
      * with the camera.

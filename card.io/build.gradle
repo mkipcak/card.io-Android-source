@@ -50,14 +50,15 @@ android {
         }
     }
 
-    task cleanNative(type: Exec, description: 'Clean JNI object files') {
+    // not compiling native libraries yet, rather using existing once at jniLibs.srcDir
+    /*task cleanNative(type: Exec, description: 'Clean JNI object files') {
         commandLine "$android.ndkDirectory/ndk-build",
                 '-C', file('src/main/jni').absolutePath,
                 'clean'
     }
     clean.dependsOn cleanNative
 
-    task buildNative(type: Exec, description: 'Compile JNI source via NDK') {
+    /*task buildNative(type: Exec, description: 'Compile JNI source via NDK') {
         commandLine "$android.ndkDirectory/ndk-build",
                 '-C', file('src/main/jni').absolutePath,
                 '-j', Runtime.runtime.availableProcessors(),
@@ -72,7 +73,7 @@ android {
                 || theTask.name == "packageDebugJniLibs") {
             theTask.dependsOn(buildNative)
         }
-    }
+    }*/
 }
 
 dependencies {
