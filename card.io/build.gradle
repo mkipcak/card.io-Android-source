@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven'
 apply plugin: 'signing'
-apply plugin: 'io.codearte.nexus-staging'
+//apply plugin: 'io.codearte.nexus-staging'
 
 repositories {
     mavenCentral()
@@ -148,7 +148,7 @@ android.libraryVariants.all { variant ->
     // sonatypeUsername=xxxxxxx
     // sonatypePassword=yyyyyyy
 
-    Properties properties = new Properties()
+    /*Properties properties = new Properties()
     properties.load(project.rootProject.file('local.properties').newDataInputStream())
     def sonatypeUsername = properties.getProperty('sonatypeUsername')
     def sonatypePassword = properties.getProperty('sonatypePassword')
@@ -209,5 +209,5 @@ android.libraryVariants.all { variant ->
             }
         }
 
-    }
+    }*/
 }
